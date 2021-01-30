@@ -5,7 +5,7 @@ import argparse
 import os
 
 with open('temp.key', 'rb') as mykey:
-    HARDCODED_KEY = mykey.reead()
+    HARDCODED_KEY = mykey.read()
 
 
 def get_parser():
