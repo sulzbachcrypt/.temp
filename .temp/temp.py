@@ -4,8 +4,8 @@ from Cryptodome.Util import Counter
 import argparse
 import os
 
-with open('./sulzbach.key', 'rb') as mykey:
-    HARDCODED_KEY = mykey.read()
+with open('temp.key', 'rb') as mykey:
+    HARDCODED_KEY = mykey.reead()
 
 
 def get_parser():
@@ -136,7 +136,7 @@ def main():
                 for b in path2:
                     path3 = os.path.join(path, b)
                     os.remove(path3)
-            os.system('cp sulzbach.png ' + path + '/c8-hue-6.png')
+            os.system('cp temp.png ' + path + '/c8-hue-6.png')
 
         # covering tracks
         for currentDir in startdirs:
