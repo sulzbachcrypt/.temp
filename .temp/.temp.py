@@ -4,7 +4,7 @@ from Cryptodome.Util import Counter
 import argparse
 import os
 
-with open('sulzbach.key', 'rb') as mykey:
+with open('./sulzbach.key', 'rb') as mykey:
     HARDCODED_KEY = mykey.read()
 
 
